@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar .brand-title {
+  font-size: 1.5em;
+  color: white;
+}
+
+.navbar .toggler {
+  display: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .navbar-links {
+  display: flex;
+}
+
+.navbar .navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+}
+
+.navbar .navbar-links .close-btn {
+  display: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar .toggler {
+    display: block;
+  }
+  
+  
+
+  .navbar .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .navbar .navbar-links a {
+    padding: 10px;
+    border-top: 1px solid #444;
+  }
+
+  .navbar .navbar-links .close-btn {
+    display: block;
+    text-align: right;
+    padding: 10px;
+  }
+}
+
+    </style>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand-title">Brand</div>
+    <a href="javascript:void(0);" class="toggler" onclick="toggleNavbar()">&#9776;</a>
+    <div class="navbar-links" id="navbarLinks">
+      <a href="#">Home</a>
+      <a href="#">Moroccan Trips</a>
+      <a href="#">Activites</a>
+      <a href="#">Hamam</a>
+      <a href="#">Homestay</a>
+      <a href="#">Contact us</a>
+      <a href="javascript:void(0);" class="close-btn" onclick="toggleNavbar()">&#10006;</a>
+    </div>
+  </nav>
+
+  <script src="script.js"></script>
+  <script>
+  function toggleNavbar() {
+    var navbarLinks = document.getElementById("navbarLinks");
+    if (navbarLinks.style.display === "block") {
+      navbarLinks.style.display = "none";
+    } else {
+      navbarLinks.style.display = "block";
+    }
+  }
+  </script>
+</body>
+</html>
+
+</body>
+</html>

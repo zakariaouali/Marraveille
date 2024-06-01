@@ -1,0 +1,842 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:sans-serif;
+    font-weight: bold;
+    
+}
+body{
+
+    overflow-x: hidden;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+nav{
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    width: 99%;
+    height: 10vh;
+    background-color: rgb(249, 249, 249);
+    gap: 50px;
+    backdrop-filter: blur(2px);
+    padding: 5px;
+    justify-content: space-between;
+}
+.navbar .toggler {
+    display: none;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+    height: 50vh;
+    text-decoration: none;
+
+}
+  
+  .navbar .navbar-links {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .navbar .navbar-links a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+  }
+  .navbar .navbar-links a:hover{
+    border-radius: 10px;
+    border-bottom: 2px solid black;
+  }
+  
+  .navbar .navbar-links .close-btn {
+    display: none;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+  }
+  
+
+nav img{
+    mix-blend-mode:multiply;
+    margin-left: 20px;
+}
+.cover video{
+    width: 150%;
+    height: 138%;
+    filter: blur(1px) brightness(80%);
+}
+
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+#ServicesTitle{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.info{
+    text-align: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left:20%;
+    background-color: rgba(145, 145, 145, 0.349);
+    padding: 20px;
+    color: white;
+    gap: 30px;
+    border-radius:20px ;
+}
+.info h1{
+    letter-spacing: 2px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.info h3{
+    word-spacing: 1px;
+    line-height: 29px;
+    font-family:sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+
+}
+.info button{
+    padding:10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: large;
+    color: white;
+    background: none;
+    border: 1px white solid;
+    cursor: pointer;
+}
+.info button:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            -webkit-transition-property: box-shadow,transform,color,background-color;
+            transition-property: box-shadow,transform,color,background-color;
+            box-shadow: 0 0 5px rgb(178, 178, 178),
+                        0 0 6px rgb(178, 178, 178),
+                        0 0 8px rgb(178, 178, 178),
+                        0 0 40px rgb(178, 178, 178);
+}
+aside{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5%;
+    gap: 30px;
+    margin-bottom: 10%;
+    text-align: center;
+    position: relative;
+}
+
+.trips{
+    width: 20%;
+    height: 40vh;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.trips img{
+    width: 162%;
+    filter: brightness(60%);
+
+}
+.activites{
+    width: 20%;
+    height: 40vh;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+}
+.activites img{
+    width: 100%;
+    filter: brightness(60%);
+
+}
+
+.Hamam{
+    width: 20%;
+    height: 40vh;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Hamam img{
+    width: 110%;
+    filter: brightness(60%);
+
+}
+.Homestay{
+    width: 20%;
+    height: 40vh;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Homestay img{
+    width: 147%;
+    filter: brightness(60%);
+}
+.TR{
+    position: absolute;
+    top: 48%;
+    left: 15%;
+    color: white;
+    font-size: 20px;
+}
+.AC{
+    position: absolute;
+    top: 48%;
+    left: 36%;
+    color: white;
+    font-size: 20px;
+}
+.HM{
+    position: absolute;
+    top: 48%;
+    left: 58.5%;
+    color: white;
+    font-size: 20px;
+}
+.HS{
+    position: absolute;
+    top: 48%;
+    left: 80%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+aside .trips:hover{
+    box-shadow: 1px 1px 5px 5px  rgb(83, 83, 83);
+    transition: 0.5s;
+}
+aside .trips img:hover{
+    filter: blur(1px) brightness(55%);
+    transition: 0.3s;
+}
+aside .activites:hover{
+    box-shadow: 0px 0px 3px 3px  rgb(113, 113, 113);
+    transition: 0.5s;
+}
+aside .activites img:hover{
+    filter: blur(1px) brightness(55%);
+    transition: 1s;
+}
+
+aside .Hamam:hover{
+    box-shadow: 1px 1px 5px 5px  rgb(83, 83, 83);
+    transition: 0.5s;
+}
+aside .Hamam img:hover{
+    filter: blur(1px) brightness(55%);
+    transition: 1s;
+}
+
+
+aside .Homestay:hover{
+    box-shadow: 1px 1px 5px 5px  rgb(83, 83, 83);
+    transition: 0.5s;
+}
+aside .Homestay img:hover{
+    filter: blur(1px) brightness(55%);
+    transition: 1s;
+}
+#TT{
+    margin-left: 8%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+main .souira{
+    width: 85%;
+    height: 18%;
+    position: relative;
+    cursor: pointer;
+}
+main .souira img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.souiratitle{
+    position: absolute;
+    top: 47%;
+    left: 41%;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px white solid;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgba(174, 174, 174, 0.443);
+
+}
+main .souira img:hover{
+    filter: brightness(60%) blur(1px);
+    transition: 0.5s;
+}
+main .ouarzazat{
+    width: 85%;
+    height: 18%;
+    position: relative;
+    cursor: pointer;
+}
+
+main .ouarzazat img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%) ;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+main .ouarzazat img:hover{
+    filter: brightness(50%) blur(1px);
+    transition: 0.5s;
+}
+.ouarzazattitle{
+    position: absolute;
+    top: 47%;
+    left: 41%;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px white solid;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgba(174, 174, 174, 0.347);
+}
+
+main .ouzoud{
+    width: 85%;
+    height: 18%;
+    position: relative;
+    cursor: pointer;
+}
+
+main .ouzoud img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%) ;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+main .ouzoud img:hover{
+    filter: brightness(50%) blur(1px);
+    transition: 0.5s;
+}
+.ouzoudtitle{
+    position: absolute;
+    top: 47%;
+    left: 41%;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px white solid;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgba(174, 174, 174, 0.347);
+}
+
+
+main .ourika{
+    width: 85%;
+    height: 18%;
+    position: relative;
+    cursor: pointer;
+}
+
+main .ourika img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(60%) ;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+main .ourika img:hover{
+    filter: brightness(50%) blur(1px);
+    transition: 0.5s;
+}
+.ourikatitle{
+    position: absolute;
+    top: 47%;
+    left: 41%;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px white solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(174, 174, 174, 0.347);
+}
+
+
+main .marzouga{
+    width: 85%;
+    height: 18%;
+    position: relative;
+    cursor: pointer;
+}
+
+main .marzouga img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(90%) ;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+main .marzouga img:hover{
+    filter: brightness(60%) blur(1px);
+    transition: 0.5s;
+}
+.marzougatitle{
+    position: absolute;
+    top: 47%;
+    left: 41%;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px white solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(174, 174, 174, 0.347);
+}
+.articlecont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+article {
+    width: 90%;
+    height: 260vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#camel{
+    gap: 16px;
+}
+.art{
+    width: 25%;
+    height: 75vh;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    
+}
+#Cook{
+    height: 75vh;
+}
+#Cook img{
+    height: 70%;
+}
+.art:hover{
+    box-shadow: 1px 1px 15px 3px black;
+    transition: 0.5s;
+}
+
+.art p{
+    font-weight: 100;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.art button{
+    padding: 5px;
+    padding-left:15px ;
+    padding-right: 15px;
+    color: white;
+    background-color: rgb(0, 161, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+}
+.art button:hover{
+    background-color: white;
+    color:rgb(0, 161, 0);
+    border: 2px solid rgb(0, 161, 0);
+    transition: 0.5s;
+}
+
+.art img{
+    height: 75%;
+    width: 105%;
+    border-radius: 5px;
+}
+#AirBallon{
+    gap:17px
+}
+
+.container {
+    width: 85%;
+    position: relative;
+    background: #aad5f6;
+}
+
+.slide {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+.caption {
+    width: 100%;
+    
+}
+.caption img{
+    width: 100%;
+    height: 50%;
+    filter: brightness(80%);
+}
+.caption h3 {
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: rgba(205, 205, 205, 0.491);
+    text-shadow: 0px 0px 5px black;
+}
+.container button{
+    width: 55px;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0.635);
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    border: none;
+}
+
+.l {
+    left: 0;
+}
+.r {
+    right: 0;
+}
+
+button {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+   }
+   
+   button span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+   }
+   
+   button span:last-child {
+    color: black;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+   }
+   
+   button:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+   }
+   
+   button:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+   }
+   
+   button:hover span:last-child {
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+   }
+#Cook{
+    width: 22%;
+}
+
+
+.hamamsection{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.hamamarticl{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    gap:50px;
+}
+.hamamarticl img{
+    width: 100%;
+    height: 100%;
+}
+.hamamimage{
+    width: 45%;
+
+}
+.hamaminfo{
+    text-align: center;
+    width: 45%;
+}
+.hamaminfo h2{
+    margin-bottom: 50px;
+}
+.hamaminfo button:hover{
+    color: black;
+}
+
+
+.homesection{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.homearticl{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    gap:50px;
+}
+.homearticl img{
+    width: 100%;
+    height: 100%;
+}
+.homeimage{
+    width: 65%;
+
+}
+.homeinfo{
+    text-align: center;
+    width: 45%;
+}
+.homeinfo h2{
+    margin-bottom: 50px;
+}
+.homeinfo button:hover{
+    color: black;
+}
+footer{
+    position: relative;
+    bottom: 0px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-color: whitesmoke;
+    display: flex;
+}
+.fotimg{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.fotimg img{
+    width: 80%;
+    margin: 0px;
+    padding: 0px;
+    mix-blend-mode:multiply;
+}
+.fotimg h1{
+    margin:-20px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+.fotsocial{
+    width: 25%;
+    height: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-top: 80px;
+}
+.fotsocial a{
+    text-decoration: none;
+    color: darkblue;
+}
+.fotsocial img {
+    width:22% ;
+    mix-blend-mode:multiply;
+    margin-bottom: 10px;
+}
+.fotsoc{
+    display: flex;
+    width: 180%;
+    margin-left: -150px;
+    gap: 15px;
+    margin-top: 70px;
+}
+.gmail{
+    margin-top: -7px;
+}
+.phon{
+    margin-top: -1px;
+}
+.fotabout{
+    width: 25%;
+    height: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.fotabout h3{
+    line-height: 32px;
+}
+
+  @media (max-width: 768px) {
+    .navbar .toggler {
+      display: block;
+    }
+    .navbar .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      height: 33vh;
+      background-color: white;
+    }
+  
+    .navbar .navbar-links a {
+      padding: 10px;
+      border-top: 1px solid #444;
+    }
+  
+    .navbar .navbar-links .close-btn {
+      display: block;
+      text-align: right;
+      padding: 10px;
+    }
+    .info{
+        text-align: center;
+        width: 80%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 28%;
+        left: 6%;
+        background-color: rgba(145, 145, 145, 0.432);
+        padding: 20px;
+        color: white;
+        gap: 20px;
+        border-radius:20px ;
+    }
+    .info h1{
+        letter-spacing: 2px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+    .info h3{
+        word-spacing: 1px;
+        line-height: 22px;
+        font-family:sans-serif;
+        font-weight: 100;
+        font-size: 17px;
+    
+    }
+    .info button{
+        padding:10px;
+        padding-left: 18px;
+        padding-right: 18px;
+        font-size: large;
+        color: white;
+        background: none;
+        border: 1px white solid;
+        cursor: pointer;
+    }
+  }
