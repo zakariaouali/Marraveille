@@ -70,8 +70,6 @@ nav img{
     height: 138%;
     filter: blur(1px) brightness(80%);
 }
-
-
 .cover {
     display: flex;
     justify-content: center;
@@ -149,7 +147,6 @@ aside{
     text-align: center;
     position: relative;
 }
-
 .trips{
     width: 20%;
     height: 40vh;
@@ -160,7 +157,6 @@ aside{
 .trips img{
     width: 162%;
     filter: brightness(60%);
-
 }
 .activites{
     width: 20%;
@@ -173,9 +169,7 @@ aside{
 .activites img{
     width: 100%;
     filter: brightness(60%);
-
 }
-
 .Hamam{
     width: 20%;
     height: 40vh;
@@ -788,55 +782,331 @@ footer{
       height: 33vh;
       background-color: white;
     }
-  
     .navbar .navbar-links a {
       padding: 10px;
       border-top: 1px solid #444;
     }
-  
     .navbar .navbar-links .close-btn {
       display: block;
       text-align: right;
       padding: 10px;
     }
     .info{
-        text-align: center;
         width: 80%;
-        height: 40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        height: 45%;
         position: absolute;
-        top: 28%;
+        top: 25%;
         left: 6%;
-        background-color: rgba(145, 145, 145, 0.432);
-        padding: 20px;
-        color: white;
         gap: 20px;
-        border-radius:20px ;
-    }
-    .info h1{
-        letter-spacing: 2px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
     }
     .info h3{
         word-spacing: 1px;
         line-height: 22px;
-        font-family:sans-serif;
         font-weight: 100;
         font-size: 17px;
-    
     }
-    .info button{
-        padding:10px;
-        padding-left: 18px;
-        padding-right: 18px;
-        font-size: large;
-        color: white;
-        background: none;
-        border: 1px white solid;
+    .cover video{
+        width: 200%;
+        height: 800px;
+        filter: blur(1px) brightness(70%);
+    }
+    .cover {
+        margin-top: 40px;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
+        margin-bottom: 25%;
+        text-align: center;
+        position: relative;
+    }
+    .trips{
+        width: 75%;
+        height: 45vh;
+        border-radius: 10px;
+        overflow: hidden;
         cursor: pointer;
     }
-  }
+    .trips img{
+        width: 158%;
+        filter: brightness(60%);
+    }
+    .activites{
+        width: 75%;
+        height: 45vh;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        border: none;
+    }
+    .activites img{
+        width: 100%;
+        filter: brightness(60%);
+    }
+    .Hamam{
+        width: 75%;
+        height: 45vh;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .Homestay{
+        width: 75%;
+        height: 45vh;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .Homestay img{
+        width: 147%;
+        filter: brightness(60%);
+    }
+    .TR{
+        position: absolute;
+        top: 10.5%;
+        left: 42%;
+        color: white;
+        font-size: 30px;
+    }
+    .AC{
+        position: absolute;
+        top: 36.5%;
+        left: 35%;
+        color: white;
+        font-size: 30px;
+    }
+    .HM{
+        position: absolute;
+        top: 61.5%;
+        left: 38%;
+        color: white;
+        font-size: 30px;
+    }
+    .HS{
+        position: absolute;
+        top: 87%;
+        left: 35%;
+        color: white;
+        font-size: 30px;
+    }
+    #ServicesTitle{
+        margin-bottom: 15%;
+    }
+    #TT{
+        margin-bottom: 15%;
+    }
+
+    main{
+        width: 110%;
+        margin-bottom: 150px;
+        margin-left: -20px;
+    }
+    .souiratitle{
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        color: white;
+    }
+    .ouarzazattitle{
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        color: white;
+    }
+    .ouzoudtitle{
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        color: white;
+    }
+    .ourikatitle{
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        color: white;
+    }
+    .marzougatitle{
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        color: white;
+        }
+    .container {
+        width: 85%;
+        height: 35vh;
+        position: relative;
+        background: #aad5f6;
+    }
+    .caption h3 {
+        color: #fff;
+        text-align: center;
+        padding: 18px;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .container button{
+        width: 35px;
+        height: 40px;
+        padding-left: 10px;
+        padding-top: 14px;
+        margin-top: 20px;
+        }
+    
+  
+    article {
+        width: 90%;
+        height: 660vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+    .art{
+        width: 75%;
+        height: 75vh;
+        overflow: hidden;
+        cursor: pointer;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+    #Cook{
+        width: 75%;
+        height: 75vh;
+        overflow: hidden;
+        cursor: pointer;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+    .hamamsection{
+        height: 50vh;
+        margin-bottom: 100px;
+        background-color: #e0e0e0be;
+    }
+    .hamamarticl{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        gap:30px;
+    }
+    .hamamarticl img{
+        width: 120%;
+        margin-left: -33px;
+        border-radius: 20%;
+        height: 100%;
+    }
+    .hamaminfo h2{
+        font-size: medium;
+        margin-bottom: 20px;
+    }
+    .homesection{
+        height: 50vh;
+        margin-bottom: 100px;
+        background-color: #e0e0e0be;
+    }
+    .homearticl{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        gap:30px;
+    }
+    .homearticl img{
+        width: 150%;
+        margin-left: -50px;
+        border-radius: 20%;
+        height: 100%;
+    }
+    .homeimage{
+        width: 55%;
+    }
+    .homeinfo{
+        margin-left: 20px;
+        text-align: center;
+        width: 60%;
+    }
+    .homeinfo h2{
+        font-size: 14px;
+        margin-bottom: 10px;    
+    }
+    footer{
+        width: 100%;
+        height: 50vh;
+        background-color: whitesmoke;
+        display: flex;
+        padding: 20px;
+    }
+    .fotimg{
+        display: none;
+    }
+    .fotimg img{
+        display: none;
+    }
+    .fotimg h1{
+        display: none;
+    }
+    .fotsocial{
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    .fotsocial a{
+        text-decoration: none;
+        color: darkblue;
+    }
+    .fotsocial img {
+        width:15% ;
+        mix-blend-mode:multiply;
+        margin-bottom: 5px;
+    }
+    .fotsoc{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: -150px;
+        gap: 15px;
+        margin-top: 50px;
+    }
+    .gmail{
+        margin-top: -7px;
+    }
+    .phon{
+        margin-top: -1px;
+    }
+    .fotabout{
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .fotabout h3{
+        line-height: 23px;
+    }
+    .fotabout h2{
+        margin-top: -140px;
+    }
+    
+}
